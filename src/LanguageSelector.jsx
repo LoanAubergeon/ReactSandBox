@@ -23,14 +23,16 @@ const LanguageSelector = () => {
 
   return (
     <div>
-      <button
+      <span 
         value={buttonText}
+        role="img"
+        aria-labelledby="englishflag"
         class="button" 
         onClick={() => {
         changeText();
-      }}>
-        {str2logo}
-      </button>
+        }}>
+          {str2logo}
+      </span>
     </div>
   )
 }
